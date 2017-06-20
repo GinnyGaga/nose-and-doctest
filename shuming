@@ -1,0 +1,16 @@
+http://www.hahack.com/wiki/python3-unittest.html
+
+Python 里主流的单元测试框架主要有 doctest、unittest 和 nose 三种:
+doctest 模块让您可以在文档字符串（docstrings）内嵌入注释以显示各种语句的期望行为，尤其是函数和方法的结果。这样做很像是让文档字符串看起来如同一个交互式 shell 会话；完成这一任务的一个简单方法是，从一个 Python 交互式 shell 中（或者从 Idel、PythonWin、MacPython 或者其他带有交互式会话的 IDE 中）拷贝-粘贴.
+unittest 已经被后面所要提到的 nose 所取代
+
+nose 是一个比 unittest 更加先进的测试框架。其优势在于：
+
+不用动不动就写个类，而只是写测试函数；
+自动查找和搜集测试，不需要自己手动搭建测试集；
+支持插件，可以搭配其他非常实用的标准化插件（coverage, output capture, drop into debugger on errors, doctests support, profiler）
+为测试打标签，并且可以根据标签非常灵活的选择测试集；
+并行测试；
+更好的支持fixtures；
+产生器测试。
+缺点：不是在标准库自带的，需要自行安装。
